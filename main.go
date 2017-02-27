@@ -197,12 +197,6 @@ func main() {
 		414429: true}
 
 	cards := loadCollectionFromSourceFile(os.Args[1])
-
-	//fmt.Println(cards)
-	//for _, c := range cards {
-	//fmt.Println(c)
-	//}
-
 	writeDeckboxCSVFile(cards, blacklist)
 
 	fmt.Printf("\nConverted %d unique cards\n", len(cards))
