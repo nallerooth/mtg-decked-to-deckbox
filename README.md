@@ -3,7 +3,18 @@ A simple tool for converting CSV files exported from
 [Decked Builder](http://www.deckedbuilder.com/) to a CSV format that can be 
 imported into [Deckbox](https://deckbox.org).
 
-Usage: `mtg-decked-to-deckbox <CSV file>`
+## Building
+```
+cd mtg-decked-to-deckbox
+go install
+```
+
+## Usage
+Given that you've added `$GOPATH/bin` to your $PATH, you should be able to
+run the following command:
+```
+mtg-decked-to-deckbox <CSV file>
+```
 
 The result will be a new CSV file, named `converted.csv`, located in the 
 current working directory.
